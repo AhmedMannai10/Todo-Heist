@@ -5,11 +5,11 @@ import Footer from './Footer';
 export default function Layout(props) {
     const {children} = props;
   return (
-    <div className='flex flex-col min-h-screen relative bg-dark p-3 text-stone-50'>
+
+    <div className='flex flex-col min-h-screen relative bg-dark text-stone-50'>
       <Header/>
-      <main  className='flex flex-col mt-16 bg-black justify-end'>
+      <main  className='flex flex-1 flex-col p-4 justify-center'> 
         {children}
-        <h1>hello there</h1>
       </main>
       <Footer/> 
     </div>
